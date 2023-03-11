@@ -1,3 +1,33 @@
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+.heading {
+    background-color: #f7d6f1;
+    cursor: pointer;
+    padding: 20px;
+    text-align: left;
+}
+
+body {
+    line-height: 1.5;
+    font-family: Georgia, serif;
+    font-weight: 300;
+}
+
 h1 {
-    color:blue;
+    font-size: 2em;
+    color: blueviolet;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: blueviolet;
+}
+
+label {
+    display: block;
+    overflow: visible;
 }
