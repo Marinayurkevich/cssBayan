@@ -1,15 +1,43 @@
 .container {
     margin: auto;
     width: 80%;
+    background-color: #f7d6f1;
 }
+
+
+.container:hover {
+    cursor: grab;
+}
+
+.layout {
+    margin: auto;
+    width: 80%;
+}
+
+.heading_title {
+    background-color: #f7d6f1;
+    padding: 20px 0;
+    text-align: left;
+    margin: auto;
+    width: 80%;
+}
+
 
 .heading {
     background-color: #f7d6f1;
-    cursor: pointer;
-    padding: 20px 80px;
+    padding: 20px 5px;
     text-align: left;
     transition: 0.3s;
 }
+
+.heading_cursor:hover {
+    cursor: pointer;
+}
+
+.heading_cursor:active {
+    cursor: progress;
+}
+
 
 body {
     line-height: 1.5;
@@ -69,15 +97,6 @@ input[type="checkbox"]:checked+.title+.content {
     display: block;
     margin: auto;
 }
-
-
-
-/* сделать onclick opacity */
-.trans:hover {
-    opacity: 100%;
-    transition: opacity 1s;
-}
-
 
 .plus {
     position: absolute;
