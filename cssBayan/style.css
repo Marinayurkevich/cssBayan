@@ -53,7 +53,6 @@ input[type="checkbox"] {
     padding: 0 20px;
     display: none;
     overflow: hidden;
-    overflow: hidden;
 }
 
 input[type="checkbox"]:checked+.title+.content {
@@ -71,6 +70,15 @@ input[type="checkbox"]:checked+.title+.content {
     margin: auto;
 }
 
+
+
+/* сделать onclick opacity */
+.trans:hover {
+    opacity: 100%;
+    transition: opacity 1s;
+}
+
+
 .plus {
     position: absolute;
     right: 0;
@@ -85,4 +93,27 @@ input[type="checkbox"]:checked+.title .plus {
 
 .heading:hover .title .plus {
     transform: rotate(45deg);
+}
+
+
+.content img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.heading:hover .content img {
+    animation: rotate .8s forwards;
+}
+
+@keyframes rotate {
+    0% {
+        height: 0%;
+        transform: scale(.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
