@@ -6,8 +6,9 @@
 .heading {
     background-color: #f7d6f1;
     cursor: pointer;
-    padding: 20px;
+    padding: 20px 80px;
     text-align: left;
+    transition: 0.3s;
 }
 
 body {
@@ -30,4 +31,58 @@ h3 {
 label {
     display: block;
     overflow: visible;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+
+.title {
+    padding: 1em 3em;
+    position: relative;
+    border: 1px solid #e596f8;
+}
+
+.title:hover {
+    background: #e596f8;
+}
+
+.content {
+    padding: 0 20px;
+    display: none;
+    overflow: hidden;
+    overflow: hidden;
+}
+
+input[type="checkbox"]:checked+.title+.content {
+    display: block;
+}
+
+.heading:hover .content {
+    display: block;
+}
+
+.pics_memes {
+    height: 300px;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+}
+
+.plus {
+    position: absolute;
+    right: 0;
+    top: 44%;
+    font-size: 3em;
+    line-height: 0;
+}
+
+input[type="checkbox"]:checked+.title .plus {
+    transform: rotate(45deg);
+}
+
+.heading:hover .title .plus {
+    transform: rotate(45deg);
 }
