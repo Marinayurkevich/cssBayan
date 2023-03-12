@@ -14,6 +14,10 @@
     width: 80%;
 }
 
+.container:hover .title h3 {
+    color: rgb(19, 19, 109);
+}
+
 .heading_title {
     background-color: #f7d6f1;
     padding: 20px 0;
@@ -34,6 +38,11 @@
     cursor: pointer;
 }
 
+
+input[type="checkbox"]:checked+.title h3 {
+    color: rgb(19, 19, 109);
+}
+
 .heading_cursor:active {
     cursor: progress;
 }
@@ -47,7 +56,7 @@ body {
 
 h1 {
     font-size: 2em;
-    color: blueviolet;
+    color: rgb(19, 19, 109);
 }
 
 h3 {
@@ -113,7 +122,6 @@ input[type="checkbox"]:checked+.title .plus {
 .heading:hover .title .plus {
     transform: rotate(45deg);
 }
-
 
 .content img {
     width: auto;
